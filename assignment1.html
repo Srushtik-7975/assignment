@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login Page </title>
+</head>
+<body bgcolor="pink">
+	<center>
+		<h1> Assignment 1 </h1>
+		<form>
+			<h1>Student login form <br/> <h1><br/>
+			<label> Username : </label>
+			<input type="text" id="uname" name="text"><br/><br/>
+			<label> Password : </label>
+			<input type="password" id="pass" name="password" maxlength="8"> <br/><br/>
+			<button type="submit" onclick="checklogin()"> Login
+			</button>
+		</from>
+	</center>
+	 <script>
+			function checklogin()
+			{
+					var u = document.getELementById('uname').value;
+					var p = document.getELementById('pass').value;
+					if(u == "admin" && p == "bca123")
+					{
+							alert("Login Successful");
+					}
+					else
+					{
+							alert("Login Unsuccessful");
+					}
+			}
+		</script>
+</body>
+</html>		
